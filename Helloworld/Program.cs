@@ -69,17 +69,47 @@
             }
 
 
+            /*Root or Square:
+            Pide al usuario un número. Si es positivo, devuelve su raíz
+            cuadrada, de lo contrario, devuelve su cuadrado */
+           
+           
+        
+           Console.WriteLine();
+           Console.WriteLine("ROOT OR SQUARE");       
+           Console.WriteLine("Digite un número");
+           if (double.TryParse(Console.ReadLine(), out double numero3)) 
+           {
+
+             if (numero3 > 0)
+               {
+               double resultado = Math.Sqrt(numero3);
+               Console.WriteLine ("La raiz cuadrad del número " + numero3 + " es " + resultado);
+               }
+
+              else
+              {
+                double resultado = numero3 * numero3;
+                Console.WriteLine ("El número " + numero3 + " elevado al cuadrado es " + resultado);
+              }
+           }
+        
+          else 
+          {
+             Console.WriteLine("Entrada no válida.");
+           }   
 
 
 
 
 
-            
 
 
 
 
 
+
+           
 
 
 
