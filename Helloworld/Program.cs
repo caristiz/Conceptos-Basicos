@@ -32,6 +32,45 @@
 
 
 
+         /*Double or Triple:
+          Solicita al usuario dos números. Si el primero es mayor, devuelva 
+          su doble, de lo contrario devuelva el triple del segundo.*/ 
+          
+          Console.WriteLine();
+          Console.WriteLine("DOUBLE OR TRIPLE");
+           Console.WriteLine("Ingresa el primer número: ");
+           if (int.TryParse(Console.ReadLine(), out int numero1)) 
+           {
+            Console.Write("Ingresa el segundo número: ");
+          if (int.TryParse(Console.ReadLine(), out int numero2))
+          {
+
+            int resultado;
+
+            if (numero1 > numero2)
+                    {
+                        resultado = numero1 * 2;
+                    }
+                    else
+                    {
+                        resultado = numero2 * 3;
+                    }
+
+                    Console.WriteLine("Resultado: " + resultado);
+                }
+                 else
+                {
+                    Console.WriteLine("Entrada no válida para el segundo número.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Entrada no válida para el primer número.");
+            }
+
+
+
+
 
 
 
