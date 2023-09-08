@@ -69,9 +69,9 @@
             }
 
 
-            /*Root or Square:
-            Pide al usuario un número. Si es positivo, devuelve su raíz
-            cuadrada, de lo contrario, devuelve su cuadrado */
+         /*Root or Square:
+         Pide al usuario un número. Si es positivo, devuelve su raíz
+         cuadrada, de lo contrario, devuelve su cuadrado */
            
            
         
@@ -98,6 +98,33 @@
           {
              Console.WriteLine("Entrada no válida.");
            }   
+
+
+         /*Circle Perimeter:
+         Pide al usuario el radio de un círculo y calcula su perímetro.*/
+
+           Console.WriteLine();
+           Console.WriteLine("CIRCLE PERIMETER");       
+           Console.WriteLine("Digite el radio de la circunferencia");
+           if (double.TryParse(Console.ReadLine(), out double radio))
+            {
+                if (radio > 0)
+                {
+                    double perimetro = Math.PI * radio * 2;
+                    Console.WriteLine( "El perímetro es: " + perimetro);
+                }
+                else
+                {
+                    Console.WriteLine("Radio no válido. Debe ser mayor que 0.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Entrada no válida");
+            }
+
+
+
 
 
 
