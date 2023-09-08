@@ -123,6 +123,44 @@
                 Console.WriteLine("Entrada no válida");
             }
 
+          /*Midweek Day: 
+         Solicita al usuario un número entre 1 y 7 y muestra el día de la 
+         semana correspondiente, pero solo considerando los días laborables*/ 
+          
+          Console.WriteLine();
+          Console.WriteLine("MIDWEEK DAY");       
+          Console.Write("Ingresa un número del 1 al 7: ");
+          if (int.TryParse(Console.ReadLine(), out int dia))
+          {
+            switch (dia)
+            {
+                case 1:
+                    Console.WriteLine("Lunes");
+                    break;
+                case 2:
+                    Console.WriteLine("Martes");
+                    break;
+                case 3:
+                    Console.WriteLine("Miércoles");
+                    break;
+                case 4:
+                    Console.WriteLine("Jueves");
+                    break;
+                case 5:
+                    Console.WriteLine("Viernes");
+                    break;
+
+                default:
+                    Console.WriteLine("Número fuera del rango laboral");
+                    break;
+            }
+        }
+        else
+        {
+            Console.WriteLine("Entrada no válida.");
+        }
+
+
 
 
 
