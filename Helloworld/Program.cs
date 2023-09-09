@@ -299,6 +299,32 @@ namespace Ejercicios{
             {
                 Console.WriteLine("La entrada no puede estar vacía.");
             }
+
+             /* Average of Four: 
+          Pide al usuario cuatro números y muestra el promedio.*/
+         
+         Console.WriteLine();
+         Console.WriteLine("AVAREGE OF FOUR");
+
+           Console.WriteLine("Digite el primer numero");
+           double numeroA = double.Parse(Console.ReadLine());
+           
+            Console.WriteLine("Digite el Segundo numero");
+           double numeroB = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite el tercer numero");
+           double numeroC = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite el cuerto numero");
+           double numeroD = double.Parse(Console.ReadLine());
+
+            
+
+            double promedio = (numeroA + numeroB + numeroC + numeroD) / 4;
+
+            Console.WriteLine($"El promedio de los números ingresados es: {promedio}");
+
+
     
 
 
