@@ -237,6 +237,55 @@ namespace Ejercicios{
 
           Console.WriteLine("La suma de los números pares entre 1 y 50 es: "+ suma);
 
+          /*Fraction Difference:  
+          Solicita al usuario los valores para dos fracciones y
+          muestra la diferencia entre esas fracciones.*/
+
+          Console.WriteLine();
+          Console.WriteLine("FRACTION DIFFERENCE");
+
+              {
+                Console.Write("Ingresa el numerador de la primera fracción: ");
+                if (int.TryParse(Console.ReadLine(), out int num1))
+               {
+                Console.Write("Ingresa el denominador de la primera fracción (distinto de cero): ");
+                if (int.TryParse(Console.ReadLine(), out int den1) && den1 != 0)
+              {
+                Console.Write("Ingresa el numerador de la segunda fracción: ");
+                 if (int.TryParse(Console.ReadLine(), out int num2))
+                {
+                    Console.Write("Ingresa el denominador de la segunda fracción (distinto de cero): ");
+                    if (int.TryParse(Console.ReadLine(), out int den2) && den2 != 0)
+                    {
+                        // Calcular la diferencia de fracciones
+                        int nuevoDenominadorComun = den1 * den2;
+                        int nuevoNumerador1 = num1 * den2;
+                        int nuevoNumerador2 = num2 * den1;
+
+                        int diferenciaNumerador = nuevoNumerador1 - nuevoNumerador2;
+
+                        Console.WriteLine($"La diferencia de las fracciones {num1}/{den1} y {num2}/{den2} es : {diferenciaNumerador}/{nuevoDenominadorComun}");
+                    }
+                    else
+                    { Console.WriteLine("El denominador de la segunda fracción debe ser un número válido y distinto de cero.");}
+                   }
+                  else
+                  { Console.WriteLine("El numerador de la segunda fracción debe ser un número válido."); }
+                 }
+                 else
+                { Console.WriteLine("El denominador de la primera fracción debe ser un número válido y distinto de cero.");}
+                }
+                else
+                 { Console.WriteLine("El numerador de la primera fracción debe ser un número válido.");}
+
+            Console.ReadLine();
+                 }
+
+         
+         
+
+
+
 
 
 
