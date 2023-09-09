@@ -160,6 +160,40 @@
             Console.WriteLine("Entrada no válida.");
         }
 
+         /*Tax Calculator:
+         Solicita al usuario su salario anual y, si este excede los 12000, 
+         muestra el impuesto a pagar que es el 15% del excedente. */ 
+            
+            Console.WriteLine();
+            Console.WriteLine("TAX CALCULATOR");  
+            Console.Write("Ingresa tu salario anual: ");
+           if (decimal.TryParse(Console.ReadLine(), out decimal salarioAnual))
+            {
+            decimal salarioMinimo = 12000;
+
+            if (salarioAnual > salarioMinimo)
+            {
+                decimal excedente = salarioAnual - salarioMinimo;
+                decimal impuesto = 0.15m * excedente;
+
+                Console.WriteLine("Tu salario anual excede los 12000 en: " + excedente);
+                Console.WriteLine("Impuesto a pagar: " + impuesto);
+            }
+            else
+            {
+                Console.WriteLine("Tu salario anual no excede los 12000. No tienes que pagar impuesto.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Entrada no válida");
+        }
+
+
+
+
+
+
 
 
 
