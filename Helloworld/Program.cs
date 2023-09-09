@@ -300,7 +300,7 @@ namespace Ejercicios{
                 Console.WriteLine("La entrada no puede estar vacía.");
             }
 
-             /* Average of Four: 
+         /* Average of Four: 
           Pide al usuario cuatro números y muestra el promedio.*/
          
          Console.WriteLine();
@@ -323,6 +323,26 @@ namespace Ejercicios{
             double promedio = (numeroA + numeroB + numeroC + numeroD) / 4;
 
             Console.WriteLine($"El promedio de los números ingresados es: {promedio}");
+
+
+            /* Smallest of Five: 
+          Pide al usuario cinco números y muestra el más pequeño. */
+         
+         Console.WriteLine();
+         Console.WriteLine("SMALLEST OF FIVE");
+
+         double minimo = double.MaxValue;
+
+         for (int i = 1; i <= 5; i++)
+         {
+          Console.Write($"Número {i}: ");
+          double numeroq = double.Parse(Console.ReadLine());
+          minimo = Math.Min(minimo, numeroq);
+          }
+           Console.WriteLine($"El número más pequeño es: {minimo}");
+
+
+
 
 
     
