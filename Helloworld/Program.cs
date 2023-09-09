@@ -1,4 +1,6 @@
-﻿namespace Ejercicios{
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace Ejercicios{
     class Program{
         static void Main(string[] args){
             
@@ -189,7 +191,7 @@
             Console.WriteLine("Entrada no válida");
         }
 
-        /*Remainder Finder:
+         /*Remainder Finder:
          Solicita dos números y muestra el residuo de la división del 
          primero entre el segundo.*/
 
@@ -220,6 +222,24 @@
                 {
                Console.WriteLine("Entrada no válida para el primer número. Ingresa un valor numérico.");
                 }
+
+                
+         /*Sum of events:
+          Calcula y muestra la suma de los números pares entre 1 y 50. */
+
+          Console.WriteLine();
+          Console.WriteLine("SUM OF EVENS");
+          int suma = 0;
+          for (int i = 2; i <=50; i+= 2)
+          {
+            suma +=i;
+          }
+
+          Console.WriteLine("La suma de los números pares entre 1 y 50 es: "+ suma);
+
+
+
+
             
 
 
