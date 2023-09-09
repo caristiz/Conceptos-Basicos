@@ -281,8 +281,28 @@ namespace Ejercicios{
             Console.ReadLine();
                  }
 
-         
-         
+
+          /*String Length 
+          Pide una palabra al usuario y muestra la longitud de esa palabra.*/
+
+         Console.WriteLine();
+         Console.WriteLine("STRING LENGTH");
+         Console.WriteLine("Introduce una palabra");
+          string? palabra = Console.ReadLine();
+
+            if (!string.IsNullOrEmpty(palabra))
+            {
+                int longitud = palabra.Length;
+                Console.WriteLine($"Resultado: {longitud}");
+            }
+            else
+            {
+                Console.WriteLine("La entrada no puede estar vacía.");
+            }
+    
+
+
+
 
 
 
