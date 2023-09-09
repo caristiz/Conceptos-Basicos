@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.Xml.Schema;
 
 namespace Ejercicios{
     class Program{
@@ -360,32 +361,43 @@ namespace Ejercicios{
            Console.Clear();
            Console.WriteLine("VOWEL COUNTER");
 
-           Console.WriteLine("Ingrese una palabra:");
-           string text = Console.ReadLine().ToLower();
-           int contadorVocales = palabra.Count(caracter => "aeiou".Contains(caracter));
-           Console.WriteLine($"El número de vocales en la palabra '{palabra}' es: {contadorVocales}");
+           Console.WriteLine("Por favor, ingresa una palabra:");
+           string text = Console.ReadLine().ToLower(); 
+            int contadorVocales = 0;
 
-         
+            foreach (char letra in text)
+          {
+            if ("aeiou".Contains(letra))
+            {
+                contadorVocales++;
+            }
+           }
 
-
-
-
-
-
-
-
+          Console.WriteLine($"El número de vocales en la palabra \"{text}\" es: {contadorVocales}");
 
     
 
+         /*Factorial Flinder
+           Pide un número al usuario y devuelve el factorial de ese número.*/
+           Console.ReadLine();
+           Console.Clear();
+           Console.WriteLine("FACTORIAL FLINDER");
 
-
-
-
-
-
-
-
+           if (!int.TryParse(Console.ReadLine(), out int n) || n < 0)
+          {
+            Console.WriteLine(n < 0 ? "El factorial no está definido para números negativos." : "Entrada no válida. Por favor, ingrese un número entero válido.");
             
+            }
+
+           long factorial = 1;
+
+            for (int i = 2; i <= n; i++)
+
+             factorial *= i;
+
+              Console.WriteLine($"El factorial de {n} es: {factorial}");
+
+        
 
 
 
@@ -393,13 +405,7 @@ namespace Ejercicios{
 
 
 
-
-
-
-
-
-
-
+          
 
 
 
