@@ -397,7 +397,31 @@ namespace Ejercicios{
 
               Console.WriteLine($"El factorial de {n} es: {factorial}");
 
-        
+           /*InRange Validator
+          Pide un número al usuario y verifica si está en el rango de 10 a 20 
+           (ambos incluidos). */
+
+           Console.ReadLine();
+           Console.Clear();
+           Console.WriteLine("INRAGE VALIDATOR");
+
+          Console.Write("Ingresa un número para verificar si está en el rango de 10 a 20: ");
+         if (int.TryParse(Console.ReadLine(), out int numeroRango))
+         {
+           if (numeroRango >= 10 && numeroRango <= 20)
+           {
+           Console.WriteLine("Resultado: Está en el rango.");
+           }
+          else
+           {
+           Console.WriteLine("Resultado: Fuera del rango.");
+            }
+            }
+          else
+          {
+          Console.WriteLine("Ingresa un número entero válido.");
+          }
+    
 
 
 
