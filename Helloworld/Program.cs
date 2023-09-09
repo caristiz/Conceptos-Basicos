@@ -38,7 +38,8 @@ namespace Ejercicios{
           Solicita al usuario dos números. Si el primero es mayor, devuelva 
           su doble, de lo contrario devuelva el triple del segundo.*/ 
           
-          Console.WriteLine();
+          Console.ReadLine();
+          Console.Clear();
           Console.WriteLine("DOUBLE OR TRIPLE");
            Console.WriteLine("Ingresa el primer número: ");
            if (int.TryParse(Console.ReadLine(), out int numero1)) 
@@ -74,10 +75,11 @@ namespace Ejercicios{
          /*Root or Square:
          Pide al usuario un número. Si es positivo, devuelve su raíz
          cuadrada, de lo contrario, devuelve su cuadrado */
+         Console.ReadLine();
            
            
         
-           Console.WriteLine();
+           Console.Clear();
            Console.WriteLine("ROOT OR SQUARE");       
            Console.WriteLine("Digite un número");
            if (double.TryParse(Console.ReadLine(), out double numero3)) 
@@ -104,8 +106,9 @@ namespace Ejercicios{
 
          /*Circle Perimeter:
          Pide al usuario el radio de un círculo y calcula su perímetro.*/
+         Console.ReadLine();
 
-           Console.WriteLine();
+           Console.Clear();
            Console.WriteLine("CIRCLE PERIMETER");       
            Console.WriteLine("Digite el radio de la circunferencia");
            if (double.TryParse(Console.ReadLine(), out double radio))
@@ -128,8 +131,9 @@ namespace Ejercicios{
           /*Midweek Day: 
          Solicita al usuario un número entre 1 y 7 y muestra el día de la 
          semana correspondiente, pero solo considerando los días laborables*/ 
+         Console.ReadLine();
           
-          Console.WriteLine();
+          Console.Clear();
           Console.WriteLine("MIDWEEK DAY");       
           Console.Write("Ingresa un número del 1 al 7: ");
           if (int.TryParse(Console.ReadLine(), out int dia))
@@ -165,8 +169,9 @@ namespace Ejercicios{
          /*Tax Calculator:
          Solicita al usuario su salario anual y, si este excede los 12000, 
          muestra el impuesto a pagar que es el 15% del excedente. */ 
+         Console.ReadLine();
             
-            Console.WriteLine();
+            Console.Clear();
             Console.WriteLine("TAX CALCULATOR");  
             Console.Write("Ingresa tu salario anual: ");
            if (decimal.TryParse(Console.ReadLine(), out decimal salarioAnual))
@@ -194,8 +199,9 @@ namespace Ejercicios{
          /*Remainder Finder:
          Solicita dos números y muestra el residuo de la división del 
          primero entre el segundo.*/
+         Console.ReadLine();
 
-          Console.WriteLine();
+          Console.Clear();
           Console.WriteLine("REMAINDER FINDER");
            Console.WriteLine("Ingresa el primer número: ");
            if (double.TryParse(Console.ReadLine(), out double numero4)) 
@@ -226,8 +232,9 @@ namespace Ejercicios{
                 
          /*Sum of events:
           Calcula y muestra la suma de los números pares entre 1 y 50. */
+          Console.ReadLine();
 
-          Console.WriteLine();
+          Console.Clear();
           Console.WriteLine("SUM OF EVENS");
           int suma = 0;
           for (int i = 2; i <=50; i+= 2)
@@ -240,6 +247,8 @@ namespace Ejercicios{
           /*Fraction Difference:  
           Solicita al usuario los valores para dos fracciones y
           muestra la diferencia entre esas fracciones.*/
+          Console.ReadLine();
+          Console.Clear();
 
           Console.WriteLine();
           Console.WriteLine("FRACTION DIFFERENCE");
@@ -284,8 +293,9 @@ namespace Ejercicios{
 
           /*String Length 
           Pide una palabra al usuario y muestra la longitud de esa palabra.*/
+          Console.ReadLine();
 
-         Console.WriteLine();
+         Console.Clear();
          Console.WriteLine("STRING LENGTH");
          Console.WriteLine("Introduce una palabra");
           string? palabra = Console.ReadLine();
@@ -302,8 +312,9 @@ namespace Ejercicios{
 
          /* Average of Four: 
           Pide al usuario cuatro números y muestra el promedio.*/
+          Console.ReadLine();
          
-         Console.WriteLine();
+         Console.Clear();
          Console.WriteLine("AVAREGE OF FOUR");
 
            Console.WriteLine("Digite el primer numero");
@@ -327,8 +338,9 @@ namespace Ejercicios{
 
             /* Smallest of Five: 
           Pide al usuario cinco números y muestra el más pequeño. */
+          Console.ReadLine();
          
-         Console.WriteLine();
+         Console.Clear();
          Console.WriteLine("SMALLEST OF FIVE");
 
          double minimo = double.MaxValue;
@@ -340,6 +352,24 @@ namespace Ejercicios{
           minimo = Math.Min(minimo, numeroq);
           }
            Console.WriteLine($"El número más pequeño es: {minimo}");
+
+           /*Vowel Counter 
+           Pide una palabra al usuario y devuelve el número de vocales en 
+           esa palabra*/
+           Console.ReadLine();
+           Console.Clear();
+           Console.WriteLine("VOWEL COUNTER");
+
+           Console.WriteLine("Ingrese una palabra:");
+           string text = Console.ReadLine().ToLower();
+           int contadorVocales = palabra.Count(caracter => "aeiou".Contains(caracter));
+           Console.WriteLine($"El número de vocales en la palabra '{palabra}' es: {contadorVocales}");
+
+         
+
+
+
+
 
 
 
