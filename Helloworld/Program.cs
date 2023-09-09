@@ -189,6 +189,40 @@
             Console.WriteLine("Entrada no válida");
         }
 
+        /*Remainder Finder:
+         Solicita dos números y muestra el residuo de la división del 
+         primero entre el segundo.*/
+
+          Console.WriteLine();
+          Console.WriteLine("REMAINDER FINDER");
+           Console.WriteLine("Ingresa el primer número: ");
+           if (double.TryParse(Console.ReadLine(), out double numero4)) 
+           {
+               Console.Write("Ingresa el segundo número: ");
+               if (double.TryParse(Console.ReadLine(), out double numero5))
+               {
+                  if (numero4 != 0)
+                  {
+                    double residuo = numero4 % numero5;
+                    Console.WriteLine($"El residuo de {numero4} entre {numero5} es: {residuo}");
+                  }
+                 
+                  else{                  
+                    Console.WriteLine(" Ingresa un segundo número diferente de cero.");
+                  } }
+                
+                  else
+                  {
+                  Console.WriteLine("Entrada no válida para el segundo número. Ingresa un valor numérico.");
+                  }
+                }
+               else
+                {
+               Console.WriteLine("Entrada no válida para el primer número. Ingresa un valor numérico.");
+                }
+            
+
+
 
 
 
